@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+      @apply text-gray-500 dark:text-gray-400 text-sm bg-gray-100 dark:bg-gray-900 leading-normal font-sans;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Outfit-Regular", sans-serif;
+    }
+  
+    hr {
+      @apply border-gray-200 dark:border-gray-600;
+    }
+  
+    .heading-text {
+      /* font-family: 'Gilroy-Regular', sans-serif; */
+      @apply text-gray-900 dark:text-gray-100;
+    }
+  
+    p {
+      font-family: "Outfit-Regular", sans-serif;
+      @apply font-thin;
+    }
+  }
+  
+  .modal-open {
+    background-color: #ffffff; /* Replace with the desired gray-100 color code */
+  }
+  /* Add this to your CSS file or style section */
+  .background-white {
+    background-color: #ffffff;
+  }
+  
+  .tabo {
+    position: relative;
+    cursor: pointer;
+  }
+  .tabo::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    width: 0.175rem;
+    height: 70%;
+    background: #34d399;
+    left: 95px;
+    bottom: 0;
+    top: 4px;
+  }
+  @keyframes loaderAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .animate-loader {
+    animation: loaderAnimation 3s linear infinite;
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+  /* Add this CSS to your stylesheet or in a style tag in your React component */
+.fading-image {
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
