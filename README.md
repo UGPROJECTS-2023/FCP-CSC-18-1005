@@ -1,6 +1,6 @@
 Student ID card reissuance system ( A case study of FEDERAL UNIVERSITY DUTSE) is a system that tends to reduce the paperwork,
 time and energy wastage by students and administrative in reissuing a lost/damaged ID card of students.
-It provides much more needed  of students 
+It provides much more needed technology to overcome the inefficient manual process the school (FUD) running on. 
 
 the project is built with javascript framework
 react.js for the front end and node (express.js) for the backend.
